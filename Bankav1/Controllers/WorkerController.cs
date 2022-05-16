@@ -53,8 +53,6 @@ namespace BankSystem.Controllers
             ekspozitura.Id = request.Id;
             ekspozitura.JMBG = request.JMBG;
             ekspozitura.FirstName = request.FirstName;
-            ekspozitura.JMBG = request.JMBG;
-            ekspozitura.FirstName = request.FirstName;
             ekspozitura.LastName = request.LastName;
             ekspozitura.ParentName = request.ParentName;
             ekspozitura.Address = request.Address;
@@ -64,7 +62,6 @@ namespace BankSystem.Controllers
             ekspozitura.HiredFromDate = request.HiredFromDate;
             ekspozitura.HiredUntilDate = request.HiredUntilDate;
             ekspozitura.ExpoId = request.ExpoId;
-            ekspozitura.Expo = request.Expo;
             ekspozitura.IsExpoChief = request.IsExpoChief;
 
             await _context.SaveChangesAsync();
