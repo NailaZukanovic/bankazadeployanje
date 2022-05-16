@@ -52,11 +52,9 @@ namespace BankSystem.Controllers
 
             ekspozitura.Id = request.Id;
             ekspozitura.ClientId = request.ClientId;
-            ekspozitura.Client = request.Client;
             ekspozitura.AccountType = request.AccountType;
             ekspozitura.CurrencyType = request.CurrencyType;
             ekspozitura.ExpoId = request.ExpoId;
-            ekspozitura.Expo = request.Expo;
             ekspozitura.Balance = request.Balance;
             
             await _context.SaveChangesAsync();

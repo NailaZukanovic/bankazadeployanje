@@ -52,7 +52,6 @@ namespace BankSystem.Controllers
 
             ekspozitura.Id = request.Id;
             ekspozitura.BankAccountId = request.BankAccountId;
-            ekspozitura.BankAccount = request.BankAccount;
             ekspozitura.JMBG = request.JMBG;
             ekspozitura.FirstName = request.FirstName;
             ekspozitura.LastName = request.LastName;
