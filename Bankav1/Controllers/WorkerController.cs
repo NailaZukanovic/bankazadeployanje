@@ -35,9 +35,9 @@ namespace BankSystem.Controllers
 
         [HttpPost]
 
-        public async Task<ActionResult<List<Worker>>> AddClient(Client ekspozitura)
+        public async Task<ActionResult<List<Worker>>> AddClient(Worker ekspozitura)
         {
-            _context.Clients.Add(ekspozitura);
+            _context.Workers.Add(ekspozitura);
             await _context.SaveChangesAsync();
 
             return Ok(await _context.Workers.ToListAsync());
